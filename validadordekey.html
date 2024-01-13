@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Key</title>
+    <style>
+    
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #444;
+            --background-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+  
+        input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px var(--primary-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+    
+        button:hover {
+            transform: scale(1.1);
+        }
+
+       
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1>Verificador de Key</h1>
+    <input type="text" id="keyInput" placeholder="Digite a Key">
+    <button onclick="verificarKey()">Verificar Key</button>
+    <p id="mensagem"></p>
+
+    <script  src="keys.js"></script>
+</body>
+</html>

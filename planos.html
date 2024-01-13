@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <style>
+        body {
+            
+            background-image: linear-gradient(to bottom, #000, #0a0a3a);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            padding: 1px;
+            margin: 15px;
+            position: relative;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ffcc00;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        p {
+            margin-top: 8px;
+            color: #aaa;
+        }
+
+        .price {
+            font-size: 16px;
+            margin-top: 8px;
+            color: #ffcc00;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            margin-top: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+       
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        
+        .card:hover {
+            transition: all 0.3s;
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+ 
+            <h2>Premium</h2>
+            <p>Consultas ilimitadas</p>
+            <p>7 dias de uso</p>
+            <p class="price">$4,00</p>
+            <a href="https://t.me/player7770" target="_blank">
+                <button>Comprar Acesso</button>
+            </a>
+        </div>
+
+        <div class="card">
+            
+            <h2>Pro</h2>
+            <p>Consultas ilimitadas</p>
+            <p>15 dias de uso</p>
+            <p class="price">$7,00</p>
+            <a href="https://t.me/player7770" target="_blank">
+                <button>Comprar Acesso</button>
+            </a>
+        </div>
+
+        <div class="card">
+            
+            <h2>Plus</h2>
+            <p>Consultas ilimitadas</p>
+            <p>30 dias de uso</p>
+            <p class="price">$10,00</p>
+            <a href="https://t.me/player7770" target="_blank">
+                <button>Comprar Acesso</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

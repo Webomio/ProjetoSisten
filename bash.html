@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bash-container {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bash-container">
+        <h2>HOME</h2>
+        <p>Modulos de Consultas</p>
+        <p>consultas de CPF, NOME E TELEFONE SOMENTE NA ADMINISTRAÇÃO!</p>
+        <button onclick="redirectToCEP()">CEP</button>
+        <button onclick="redirectToCPF()">CPF</button>
+        <button onclick="redirectToTEL()">Telefone</button>
+        <button onclick="redirectToNOME()">Nome</button>
+        <button onclick="redirectToCNPJ()">CNPJ</button>
+        <button onclick="redirectToBin()">BIN</button>
+        
+       <p>Sisten é um site dedicado à consulta de dados, centrado na preservação da privacidade dos usuários.</p>
+       <p>Caso esteja com alguém problema chame o suporte </p>
+    </div>
+    <a href="https://t.me/" target="_blank"><p>Suporte</p></a>
+   <script  src="bash.js"></script>
+</body>
+
+</html>

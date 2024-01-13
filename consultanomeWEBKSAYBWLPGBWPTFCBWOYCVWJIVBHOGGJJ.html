@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+       body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            width: 200px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+        .chat-container {
+            background-color: #333;
+            border-radius: 5px;
+            max-width: 500px;
+            margin-top: 20px;
+            overflow: auto;
+        }
+
+        .chat-message {
+            padding: 10px;
+            border-bottom: 1px solid #555;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        .copy-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .copy-button:hover {
+            background-color: #444;
+        }
+      </style>
+</head>
+
+<body>
+    <h2>Consulta de Nome</h2>
+    <form id="nomeForm">
+        <input type="text" id="nome" name="nome" placeholder="Digite o Nome" required>
+        <button type="button" onclick="consultarNome()">Consultar</button>
+    </form>
+    <div class="chat-container" id="chat-container"></div>
+
+    <script  src="nome.js"></script>
+</body>
+
+</html>

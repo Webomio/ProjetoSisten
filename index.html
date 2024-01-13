@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sisten</title>
+    <style>
+        /* Adicionei algumas variáveis de cores para facilitar a personalização */
+        :root {
+            --bg-color: #1a1a1a;
+            --container-color: #333;
+            --text-color: #ffffff;
+            --accent-color: #ffcc00;
+            --button-color: #ff0000;
+            --error-color: #ff0000;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            background-color: var(--container-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            /* Adicionei uma animação para o título */
+            animation: pulse 2s infinite;
+        }
+
+        /* Defini a animação do título */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #444;
+            color: var(--text-color);
+            outline: none;
+            /* Adicionei uma transição para os inputs */
+            transition: all 0.3s;
+        }
+
+        /* Adicionei um efeito de foco para os inputs */
+        input:focus {
+            border-color: var(--accent-color);
+            box-shadow: inset 0 0 5px var(--accent-color);
+        }
+
+        button {
+            background-color: var(--button-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            /* Adicionei uma transição para o botão */
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+            /* Adicionei uma transformação para o botão */
+            transform: scale(1.05);
+        }
+
+        #error-message {
+            color: var(--error-color);
+            margin-top: 10px;
+            display: none;
+            /* Adicionei um ícone de erro */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-exclamation-triangle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8.982 1.566a.5.5 0 0 0-.964 0L.165 13.233A.5.5 0 0 0 .5 14h14.964a.5.5 0 0 0 .393-.832L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="checkLogin()">Entrar</button>
+        <p id="error-message">Usuário ou senha incorretos. <a href="plano.html">Clique aqui</a></p>
+    </div>
+
+    <script  src="script.js"></script>
+</body>
+</html>
