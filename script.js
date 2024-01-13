@@ -2,7 +2,7 @@ function redirectToBash() {
         
         localStorage.setItem("loggedIn", "true");
 
-        // Redirecione para a pÃ¡gina bash.html
+        
         window.location.href = "bash.html";
     }
 
